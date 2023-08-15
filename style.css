@@ -64,7 +64,7 @@ body {
 }
 
 section .content {
-    padding-top: calc(100px + 25vh);
+    padding-top: calc(100px + 15vh);
 }
 
 #root>div :where(main, section):nth-child(even) {
@@ -180,6 +180,11 @@ section .content {
     font-size: 24px;
 }
 
+#proyectos .content>h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
 #proyectos #proyectosImg {
     display: flex;
     flex-wrap: wrap;
@@ -214,53 +219,71 @@ section .content {
     top: 0;
     opacity: 0;
     transition: opacity 1.3s,opacity .5s;
-    /* width: 100%;
-    height: 100%; */
+    padding: 15px;
+    border-radius: 10px;
     
 }
 
 #proyectos #proyectosImg article:hover .description {
     display: flex;
     flex-direction: column;
-    
+    justify-content: space-between;
+
     background: rgba(0, 0, 0, 0.6);
     opacity: 1;
-    
-    border-radius: 10px;
 
     width: calc(100% - 30px);
     height: calc(100% - 30px);
-
-    padding: 15px;
 }
 
-#proyectos #proyectosImg article:hover .description h1 {
+#proyectos #proyectosImg article .description header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#proyectos #proyectosImg article .description header nav {
+    display: flex;
+}
+
+#proyectos #proyectosImg article .description header nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #333333;
+    transition: transform 300ms;
+    margin-left: 15px;
+}
+
+#proyectos #proyectosImg article .description header nav a:hover {
+    transform: scale(1.25);
+}
+
+#proyectos #proyectosImg article .description h1 {
     font-size: 36px;
     color: white;
     margin: 0;
 }
 
-#proyectos #proyectosImg article:hover .description p {
-    font-size: 20px;
+#proyectos #proyectosImg article .description p {
+    font-size: 16px;
     color: white;
 }
 
-
-
-/* Pruebas */
-
-#pau {
-    transition: filter 0.3s ease-in-out;
+#proyectos #proyectosImg article .description .tags {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-#pau:hover {
-    filter: blur(3px);
-}
 
 #proyectos .tag {
     padding: 5px;
     border-radius: 5px;
-    background-color: black;
+    background-color: #97F8D5;
+    margin-right: 10px;
+    margin-top: 5px;
 }
 
 #proyectos .tag.html {
@@ -286,3 +309,9 @@ section .content {
 #proyectos .tag.mysql {
     background-color: #00758F;
 }
+
+
+
+/* Pruebas */
+
+
