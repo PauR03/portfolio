@@ -180,6 +180,14 @@ section .content {
     font-size: 24px;
 }
 
+#proyectos {
+    height: auto !important;
+}
+
+#proyectos .content {
+    padding-bottom: calc(100px + 15vh);
+}
+
 #proyectos .content>h1 {
     font-size: 48px;
     margin: 0;
@@ -218,10 +226,10 @@ section .content {
     position: absolute;
     top: 0;
     opacity: 0;
-    transition: opacity 1.3s,opacity .5s;
+    transition: opacity 1.3s, opacity .5s;
     padding: 15px;
     border-radius: 10px;
-    
+
 }
 
 #proyectos #proyectosImg article:hover .description {
@@ -310,8 +318,128 @@ section .content {
     background-color: #00758F;
 }
 
+#formulario {}
+
+#formulario .content {}
+
+#formulario h1 {
+    color: white;
+    font-size: 48px;
+}
+
+#formulario form {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#formulario form label {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#formulario form :where(input, textarea) {
+    border-radius: 10px;
+    background-color: white;
+    border: 0;
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+#formulario form textarea {
+    padding-top: 10px;
+    scrollbar-gutter: stable;
+    resize: none;
+}
+
+#formulario form>div {
+    display: flex;
+}
+
+#formulario form>div :where(.divName, .divEmail) {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+#formulario form>div .divName {
+    margin-right: 10%;
+}
+
+#formulario form>div.divMessage {
+    margin-top: 35px;
+    flex-direction: column;
+}
+
+#formulario form>div :where(.divName, .divEmail) input {
+    height: 50px;
+
+}
+
+
+#formulario form button {
+    margin-top: 30px;
+    width: 150px;
+    height: 50px;
+    align-self: flex-end;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background: #FFF;
+}
+
+
 
 
 /* Pruebas */
 
 
+/* #botonEnviarFormulario {
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+}
+
+#botonEnviarFormulario:hover,
+#botonEnviarFormulario:focus {
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+#botonEnviarFormulario:hover {
+    transform: translateY(-1px);
+}
+
+#botonEnviarFormulario:active {
+    background-color: #F0F0F1;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: rgba(0, 0, 0, 0.65);
+    transform: translateY(0);
+} */
