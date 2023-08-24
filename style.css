@@ -37,7 +37,7 @@ body {
     margin-left: auto;
     margin-right: auto;
 
-    padding-right: 20px;
+    padding: 0 20px;
 }
 
 #root>header main img {
@@ -60,16 +60,18 @@ body {
     background-color: white;
     width: 100%;
     min-height: calc(100vh - 60px);
+    display: flex;
+    align-items: center;
 }
 
 #inicio {
     height: 100vh !important;
 }
 
-section .content {
+/* section .content {
     padding-top: calc(100px + 15vh);
     padding-bottom: calc(100px + 15vh);
-}
+} */
 
 #root>div :where(main, section):nth-child(even) {
     background-color: #1770FC;
@@ -153,6 +155,10 @@ section .content {
     transform: scale(1.25);
 }
 
+#inicio .contact a svg {
+    width: 60%;
+}
+
 #inicio .cv {
     width: 260px;
     height: 90px;
@@ -189,7 +195,8 @@ section .content {
 }
 
 #proyectos .content {
-    padding-bottom: calc(100px + 15vh);
+    padding-bottom: calc(15vh);
+    padding-top: calc(15vh);
 }
 
 #proyectos .content>h1 {
@@ -274,6 +281,10 @@ section .content {
     transform: scale(1.25);
 }
 
+#proyectos #proyectosImg article .description header nav a svg {
+    width: 60%;
+}
+
 #proyectos #proyectosImg article .description h1 {
     font-size: 3em;
     color: white;
@@ -326,7 +337,10 @@ section .content {
 
 #formulario {}
 
-#formulario .content {}
+#formulario .content {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
 
 #formulario h1 {
     color: white;
@@ -361,6 +375,8 @@ section .content {
     padding-top: 10px;
     scrollbar-gutter: stable;
     resize: none;
+    
+    width: calc(100% - 20px);
 }
 
 #formulario form>div {
@@ -378,7 +394,7 @@ section .content {
     display: flex;
     flex-direction: column;
     width: 45%;
-    min-width: 250px;
+    /* min-width: 250px; */
 }
 
 #formulario form>div.divMessage {
@@ -399,15 +415,18 @@ section .content {
     background: #FFF;
 }
 
+button:active {
+    transform: translateY(3px);
+}
 
 
-
-/* Pruebas */
+/* media query */
 
 @media (max-width: 1100px) {
     #root>div :where(main, section) {
         padding-left: 5%;
         padding-right: 5%;
+        width: 90%;
     }
 }
 
@@ -429,4 +448,103 @@ section .content {
         width: 100%;
     }
     
+}
+
+@media (max-width: 600px) {
+
+    #sobreMi p {
+        font-size: 1em;
+    }
+
+    #proyectos .content>h1,
+    #sobreMi h1,
+    #formulario h1{
+        font-size: 2em;
+    }
+
+    #proyectos #proyectosImg article {
+        min-width: 300px;
+    }
+
+    #proyectos #proyectosImg article .description h1 {
+        font-size: 1.75em;
+    }
+
+    #proyectos #proyectosImg article .description header nav a {
+        width: 30px;
+        height: 30px;
+    }
+
+    #proyectos #proyectosImg article .description p {
+        font-size: .8em;
+    }
+
+    #proyectos .tag {
+        font-size: 0.9em;
+    }
+    
+}
+
+@media (max-width: 425px) {
+    #inicio h1 {
+        font-size: 1.5em;
+    }
+
+    #inicio span {
+        font-size: 2em;
+    }
+
+    #inicio .contact a {
+        width: 30px;
+        height: 30px;
+    }
+
+    #inicio .cv {
+        width: 240px;
+        height: 80px;
+    }
+
+    #formulario form {
+        width: 75%;
+    }
+
+    /* #root>header {
+        background-color: transparent;
+    }
+
+    #root>header main {
+        display: none;
+    } */
+
+    #root>header main {
+        justify-content: space-between;
+    }
+
+    #root>header main nav a {
+        font-size: .8rem;
+    }
+
+    #root>header main nav a {
+        margin-left: 3vw;
+    }
+}
+
+@media (max-width: 365px) {
+    #proyectos .content>h1,
+    #sobreMi h1,
+    #formulario h1{
+        font-size: 1.5em;
+    }
+
+    #proyectos #proyectosImg article .description h1 {
+        font-size: 1.5em;
+    }
+
+    #root>header main nav {
+        margin-left: 10px;
+    }
+
+    #root>header main nav a {
+        margin-left: 5px;
+    }
 }
