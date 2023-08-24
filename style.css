@@ -178,6 +178,10 @@ body {
     transform: scale(1.1);
 }
 
+#sobreMi {
+    padding-top: 100px;
+}
+
 #sobreMi * {
     color: white;
 }

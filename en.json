@@ -1,0 +1,90 @@
+{
+    "menu": [
+        "Home",
+        "About Me",
+        "Projects",
+        "Contact"
+    ],
+    "inicio": {
+        "presentacion": "Hello, I'm Pau Rius 👋!",
+        "oficio": "Web Developer",
+        "descargar": "Download my CV"
+    },
+    "sobreMi": {
+        "titulo": "About Me:",
+        "parrafos": [
+            "Enthusiastic about continuous learning, passionate about my field of study and future profession. My determination and dedication drive me to overcome challenges and contribute meaningfully.",
+            "I can bring experience, adaptability, and a willingness to learn, enabling me to meet the company's set goals and grow as a developer."
+        ]
+    },
+    "proyectos": {
+        "titulo": "Projects:",
+        "proyecto1": {
+            "imagen": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4DFAR?ver=008d",
+            "titulo": "To-Do",
+            "github": "https://github.com/PauR03",
+            "link": "https://paurius.netlify.app/",
+            "descripcion": "A to-do app that helps you manage bla bla bla bla bla bla bla bla. It's better if this doesn't exceed four lines, but there shouldn't be any issue if it takes up more than x lines, as there's plenty of space available for anything.",
+            "tags": {
+                "#HTML": "html",
+                "#CSS": "css",
+                "#JavaScript": "js",
+                "#PHP": "php",
+                "#NodeJS": "node",
+                "#MySQL": "mysql"
+            }
+        },
+        "proyecto2": {
+            "imagen": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4DFAR?ver=008d",
+            "titulo": "To-Do",
+            "github": "https://github.com/PauR03",
+            "link": "https://paurius.netlify.app/",
+            "descripcion": "A to-do app that helps you manage bla bla bla bla bla bla bla bla. It's better if this doesn't exceed four lines, but there shouldn't be any issue if it takes up more than x lines, as there's plenty of space available for anything.",
+            "tags": {
+                "#HTML": "html",
+                "#CSS": "css",
+                "#JavaScript": "js",
+                "#PHP": "php",
+                "#NodeJS": "node",
+                "#MySQL": "mysql"
+            }
+        },
+        "proyecto3": {
+            "imagen": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4DFAR?ver=008d",
+            "titulo": "To-Do",
+            "github": "https://github.com/PauR03",
+            "link": "https://paurius.netlify.app/",
+            "descripcion": "A to-do app that helps you manage bla bla bla bla bla bla bla bla. It's better if this doesn't exceed four lines, but there shouldn't be any issue if it takes up more than x lines, as there's plenty of space available for anything.",
+            "tags": {
+                "#HTML": "html",
+                "#CSS": "css",
+                "#JavaScript": "js",
+                "#PHP": "php",
+                "#NodeJS": "node",
+                "#MySQL": "mysql"
+            }
+        },
+        "proyecto4": {
+            "imagen": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4DFAR?ver=008d",
+            "titulo": "To-Do",
+            "github": "https://github.com/PauR03",
+            "link": "https://paurius.netlify.app/",
+            "descripcion": "A to-do app that helps you manage bla bla bla bla bla bla bla bla. It's better if this doesn't exceed four lines, but there shouldn't be any issue if it takes up more than x lines, as there's plenty of space available for anything.",
+            "tags": {
+                "#HTML": "html",
+                "#CSS": "css",
+                "#JavaScript": "js",
+                "#PHP": "php",
+                "#NodeJS": "node",
+                "#MySQL": "mysql"
+            }
+        }
+    },
+    "contacto": {
+        "titulo": "Send Me a Message!",
+        "label1": "Your Name",
+        "label2": "Your Email",
+        "label3": "Your Message",
+        "textArea": "Leave your message..."
+    }
+}
