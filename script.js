@@ -52,7 +52,6 @@ function cargarDatos(){
     $.getJSON("./"+idiomaActual+".json", (data) => {
         
         $("#root>header main nav a").each((i,e) => {
-            // $("#root>header main nav a")[i].innerHTML = data.menu[i]
             $(e).text(data.menu[i])
         })
 
@@ -65,6 +64,23 @@ function cargarDatos(){
         $("#sobreMi p").each((i,e) => {
             $(e).text(data.sobreMi.parrafos[i])
         })
+
+        $("#proyectos .content>h1").text(data.proyectos.titulo)
+        
+        for(proyecto in data.proyectos.proyectos){
+            console.log(data.proyectos.proyectos[proyecto])
+            
+        }
+        
+
+
+        $("#formulario h1").text(data.contacto.titulo)
+        $("#formulario form label").each((i,e) => {
+            $(e).text(data.contacto.label[i])
+        })
+
+        $("#formulario form textarea").text(data.contacto.textArea)
+        $("#formulario form button").text(data.contacto.enviar)
     }
     );
 }
