@@ -36,11 +36,11 @@ $(document).ready(function () {
     })
 
     $("#root>header main img").click((e) => {
-        cargarDatos()
+        traducirDatos()
     })
 });
 
-function cargarDatos(){
+function traducirDatos(){
     if(idiomaActual === "es") {
         $("#root>header main img").attr("src","./img/spain.png")
         idiomaActual = "en"
@@ -67,13 +67,19 @@ function cargarDatos(){
 
         $("#proyectos .content>h1").text(data.proyectos.titulo)
         
+        var listaProyectos = $("#proyectosImg article")
+
         for(proyecto in data.proyectos.proyectos){
-            console.log(data.proyectos.proyectos[proyecto])
+            $(listaProyectos[proyecto]).find("h1").text(
+                data.proyectos.proyectos[proyecto].titulo
+            )
+
+            $(listaProyectos[proyecto]).find("p").text(
+                data.proyectos.proyectos[proyecto].descripcion
+            )
             
         }
         
-
-
         $("#formulario h1").text(data.contacto.titulo)
         $("#formulario form label").each((i,e) => {
             $(e).text(data.contacto.label[i])
